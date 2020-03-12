@@ -1,0 +1,5 @@
+for n in $(seq 298  297  2976)
+do
+    java -cp bin LSArrayApp LoadShedding.rand.n$n.txt > Arrayoutput/output.part5.arr.n$n.xls
+    java -cp bin LSBSTApp LoadShedding.rand.n$n.txt > BSToutput/output.part5.bst.n$n.xls 
+done
