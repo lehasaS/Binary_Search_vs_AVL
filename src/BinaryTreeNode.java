@@ -19,4 +19,5 @@ public class BinaryTreeNode
    
    BinaryTreeNode getLeft () { return left; }
    BinaryTreeNode getRight () { return right; }
+   public String toString() {return data.toString();}
 }

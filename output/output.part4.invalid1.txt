@@ -1,0 +1,3 @@
+Areas not found.
+The total number of find operations made to find a match is: 138
+The total number of insertions is: 270100

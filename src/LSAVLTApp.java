@@ -1,7 +1,7 @@
 /**
  * @author Lehasa Seoe (SXXLEH001)
- * 02 March 2020
- * This class is used to create a Binary Search Tree, to obtain the number of insertions and searches for our experiment of comparing an arary and a Binary Search Tree.
+ * 12 March 2020
+ * This class is used to create an AVL Tree, to obtain the number of insertions and searches for our experiment of comparing an AVL Tree and a Binary Search Tree.
  */
 import java.io.*;
 import java.util.*;
@@ -59,9 +59,7 @@ private static int Count=0; //instrumentation
      */
       public static void printAreas(String stage, String day, String startTime){
 	  if ((data.find(new Loadshedding(stage+"_"+day+"_"+startTime, null))!=null)){
-	      System.out.println((data.find(new Loadshedding(stage+"_"+day+"_"+startTime, null)).toString()));
-	      //  find = find data.returnFindCounter();
-	      //  data.resetFindCounter();
+	      System.out.println(((data.find(new Loadshedding(stage+"_"+day+"_"+startTime, null))).toString()));
         }
 	else{
 	     System.out.println("Areas not found.");
@@ -103,7 +101,6 @@ private static int Count=0; //instrumentation
      
       for (int i=0; i<number; i++){
 	  if ((data2.find(new Loadshedding(searchData[i].Details(), null))!=null)){
-	      //System.out.println((data2.find(new Loadshedding(searchData[i].Details(), null)).toString()));
 		  System.out.println(data2.returnInsertCounter()+","+data2.returnFindCounter());
 			data2.resetFindCounter();
         }
